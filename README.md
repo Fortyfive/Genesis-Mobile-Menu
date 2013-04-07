@@ -10,7 +10,6 @@ Mobile menu widget for Genesis Framework
 <code> 
 /** Custom Widgets **/
 add_action( 'init', 'genesis_mobile_menu', 9999 );
-
 function genesis_mobile_menu() {
   if ( ! class_exists( 'mobile_menu' ) )
 		 require_once( CHILD_DIR . '/lib/mobile-menu/init.php' );
