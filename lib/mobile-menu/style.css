@@ -1,0 +1,182 @@
+/**
+ * Mobile Nav Styling
+ */
+ 
+/* Mobile Nav - Desktop Attributes
+------------------------------------------------------------ */
+
+#mobile-nav-wrapper { display: none; } /* hide the navigation button by default */
+
+@media only screen and (max-width: 800px) {
+	
+	/* Desktop Menu HIDE
+	-------------------------------------------------------- */
+	
+	.menu-primary, .menu-secondary, #header .menu  { display: none; }
+	
+	  /* Navigation Button
+	-------------------------------------------------------- */
+
+	.nav-button {
+		display: block;
+		position: relative;
+		top: 8px;
+		left: 7px;
+		width: 50px;
+		height: 35px;		
+		background:  url('images/menu-icon-large.png'), #6E83B6; /* Old browsers */
+		background:  url('images/menu-icon-large.png'), -moz-linear-gradient(top, #6E83B6 0%, #233766 100%); /* FF3.6+ */
+		background:  url('images/menu-icon-large.png'), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6E83B6), color-stop(100%,#233766)); /* Chrome,Safari4+ */
+		background:  url('images/menu-icon-large.png'), -webkit-linear-gradient(top, #6E83B6 0%,#233766 100%); /* Chrome10+,Safari5.1+ */
+		background:  url('images/menu-icon-large.png'), -o-linear-gradient(top, #6E83B6 0%,#233766 100%); /* Opera 11.10+ */
+		background:  url('images/menu-icon-large.png'), -ms-linear-gradient(top, #6E83B6 0%,#233766 100%); /* IE10+ */
+		background:  url('images/menu-icon-large.png'), linear-gradient(to bottom, #6E83B6 0%,#233766 100%); /* W3C */		
+		background-position: center -3px;
+		background-repeat: no-repeat;
+		background-size: 21px, 100%;
+		cursor: pointer;
+		border: 0 none;
+		border-bottom: 1px solid rgba(255,255,255,.1);
+		box-shadow: 0 0 4px rgba(0,0,0,.7) inset;
+		border-radius: 5px;
+		z-index: 999;
+		text-indent: -9999px;
+	}
+	.nav-button:hover { 
+		background-color: rgba(0,0,0,.1); 
+	}
+	.nav-button.open {		
+		background:  url('images/menu-icon-large.png'), #6E83B6; /* Old browsers */
+		background:  url('images/menu-icon-large.png'), -moz-linear-gradient(top, #6E83B6 0%, #233766 100%); /* FF3.6+ */
+		background:  url('images/menu-icon-large.png'), -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6E83B6), color-stop(100%,#233766)); /* Chrome,Safari4+ */
+		background:  url('images/menu-icon-large.png'), -webkit-linear-gradient(top, #6E83B6 0%,#233766 100%); /* Chrome10+,Safari5.1+ */
+		background:  url('images/menu-icon-large.png'), -o-linear-gradient(top, #6E83B6 0%,#233766 100%); /* Opera 11.10+ */
+		background:  url('images/menu-icon-large.png'), -ms-linear-gradient(top, #6E83B6 0%,#233766 100%); /* IE10+ */
+		background:  url('images/menu-icon-large.png'), linear-gradient(to bottom, #6E83B6 0%,#233766 100%); /* W3C */	
+		
+		background-position: center -40px;
+		background-repeat: no-repeat;
+		background-size: 21px, 100%;
+	}
+
+	/* Navigation Bar
+	-------------------------------------------------------- */
+	.logged-in #mobile-nav-wrapper {
+		position: relative;
+	}
+	
+	#mobile-nav-wrapper {
+		  clear: both;
+		  display: block;
+		  height: 50px;
+		  top: 0px;
+		  z-index: 9999;
+		  width: 100%;
+		  position: relative;
+		}
+	
+	.mobile-label {
+	  left: 70px;
+	  line-height: 120%;
+	  position: relative;
+	  top: -25px;
+	  z-index: 1000;
+	  width: 60%;
+	}
+
+	input, label, select, textarea {
+	  font-size: 18px;
+	}
+
+
+	#mobile-nav {
+		width: 100%;
+		float: none;
+		background:  #6E83B6; /* Old browsers */
+		background:  -moz-linear-gradient(top, #6E83B6 0%, #233766 100%); /* FF3.6+ */
+		background:  -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6E83B6), color-stop(100%,#233766)); /* Chrome,Safari4+ */
+		background:  -webkit-linear-gradient(top, #6E83B6 0%,#233766 100%); /* Chrome10+,Safari5.1+ */
+		background:  -o-linear-gradient(top, #6E83B6 0%,#233766 100%); /* Opera 11.10+ */
+		background:  -ms-linear-gradient(top, #6E83B6 0%,#233766 100%); /* IE10+ */
+		background:  linear-gradient(to bottom, #6E83B6 0%,#233766 100%); /* W3C */		
+		display: block;
+		height: 50px;
+		margin: -61px 0 0 0;
+		padding: 0;
+		overflow: hidden;
+		box-shadow: 0 1px 2px rgba(0,0,0,.6);
+		top: -11px;
+		left: 0px;
+		z-index: 998;
+		clear: both;
+	}
+	#mobile-nav li {
+		display: none;
+		width: 100%;
+		font-family: Arial;
+	}
+	#mobile-nav li a {
+		display: block;
+		width: 90%;
+		padding: 10px 5%;
+		font-size: 14px;
+		font-weight: bold;
+		text-shadow: -1px -1px 0 rgba(0,0,0,.15);
+		color: white;
+		text-decoration: none;
+		border-bottom: 1px solid rgba(0,0,0,.2);
+		border-top: 1px solid rgba(255,255,255,.1); 
+	}
+	#mobile-nav li a:hover {
+		background-color: rgba(0,0,0,.5);
+		border-top-color: transparent;
+	}
+	#mobile-nav > li:first-child {
+		border-top: 1px solid rgba(0,0,0,.2);
+	}
+
+	/* Toggle the navigation bar open  */
+
+	#mobile-nav.open { 
+		height: auto; 
+		padding-top: 50px;
+	}
+	#mobile-nav.open li { 
+		display: inline-block; 
+	}
+
+	/* Submenus – optional .parent class indicates dropdowns */
+
+	#mobile-nav > li:hover > a {
+		background: rgba(0,0,0,.5);
+		border-bottom-color: transparent;
+	}
+	#mobile-nav li.parent > a {
+		background: url('images/sub-menu-arrow-down.png') no-repeat 90% 50%;
+		color: #fff;
+		float: right;
+	}
+	#mobile-nav li.parent > a:hover {
+		background: rgba(0,0,0,.75);
+	}
+	#mobile-nav li ul {
+		display: none;
+		background: rgba(0,0,0,.5);
+		border-top: 0 none;
+		padding: 0;
+	}
+	#mobile-nav li ul a {
+		border: 0 none;
+		font-size: 12px;
+		padding: 10px 5%;
+		font-weight: normal;
+	}
+	#mobile-nav li:hover ul {
+		display: block;
+		border-top: 0 none;
+	}
+	
+	/* END MOBILE NAV EXTRAVAGANZA */
+
+
+
