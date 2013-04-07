@@ -1,7 +1,7 @@
 Genesis-Mobile-Menu
 ===================
 
-Mobile menu widget for Genesis Framework
+Mobile menu widget for Genesis Framework. It is imperative that you have jQuery included in your core WP or theme files.
 
 1) Place this lib folder in your Genesis child theme if you don't already have one.
 
