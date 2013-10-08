@@ -12,5 +12,3 @@ Mobile menu widget for Genesis Framework. It is imperative that you have jQuery 
 //* Mobile Menu
 require_once(CHILD_DIR.'/lib/mobile-menu/init.php');
 </code>
-
-3) Change what you need to suit your needs!
